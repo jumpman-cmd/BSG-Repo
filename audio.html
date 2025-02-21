@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Audio practise </title>
+	</head>
+	<body>
+		<p> My first song </p>
+		<audio controls> 
+		<!-- some features you can add after controls - autoplay, muted, loop, etc... -->
+			
+			<!-- It's a good practise to add audio loop backs, in case
+			the browser doesn't accept .mp3 file...look below the loop back. -->
+			<source src="two.mp3" type="audio/mpeg">
+			<source src="two.wav" type="audio/wav">
+		</audio>
+		
+		<br><br>
+		<p> My second song </p>
+		<audio controls autoplay muted loop>
+			<source src="one.mp3">
+		</audio>
+		
+		<br><br>
+		<p> My third song </p>
+		<audio controls>
+			<source src="four.mp3">
+		</audio>
+	</body>
+</html>

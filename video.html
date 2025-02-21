@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Video practise </title>
+	</head>
+	<body>
+		<video src="I4.mp4"
+		width="500px"
+		controls autoplay muted loop> 
+		<!-- We can use the same attributes as in audio, e.g., muted, loop, etc... -->
+		</video>
+		
+		<!-- We can also add back up loop backs in case the browser doesn't support
+		the upploaded video type. -->
+		<video width="500px" controls>
+			<source src="IVT.mp4" type="video/mp4">
+			<source src="IVT.webm" type="video/webm">
+		</video>
+		
+		<!-- We can also have a link in a video -->
+		<a href="https://www.youtube.com/watch?v=OOKMf-kMEdg"
+		title="Click to listen to Best Eminem songs">
+			<video width="500px" controls autoplay muted>
+				<source src="IL.mp4" type="video/mp4"> 
+				<source src="IL.webm" type="video/webm"> 
+			</video>
+		</a>
+	</body>
+</html>
