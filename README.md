@@ -1,2 +1,3 @@
 # BSG-Repo
-My GitHub repo for software dev.
+
+In this repo, I practice software development best practices for both backend and frontend.
