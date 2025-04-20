@@ -9,18 +9,17 @@ const PORT = process.env.PORT || 10000;
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the React app
-app.use(express.static(path.join(__dirname, "build")));
+// Serve React build static files from the correct location
+app.use(express.static(path.join(__dirname, "..", "build")));
 
 // API route example
 app.get("/api/movies", (req, res) => {
   res.json({ message: "Movies endpoint working!" });
 });
 
-// The "catchall" handler: for any request that doesn't
-// match one above, send back React's index.html file.
+// Catch-all handler to return React's index.html for any route
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "build", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
 });
 
 app.listen(PORT, () => {
