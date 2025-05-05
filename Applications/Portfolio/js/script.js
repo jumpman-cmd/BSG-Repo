@@ -663,9 +663,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		const onLoad = function () 
 		{
             const script = document.createElement("script");
-            script.src = "https://www.chatbase.co/embed.min.js";
-            script.id = "q99KYXfNmcgQ6hp78JtF4"; 
-            script.domain = "www.chatbase.co";
+
             document.body.appendChild(script);
         };
         
